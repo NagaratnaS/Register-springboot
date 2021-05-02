@@ -25,7 +25,7 @@ public class RegistrationServiceImpl implements RegistartionService{
 		if(!entity.getFname().equals(null) && !entity.getGender().equals(null) && !entity.getEmail().equals(null) && !entity.getDateOfBirth().equals(null) && entity.getContactNo() > 0) {
 			repo.save(entity);
 			return "data saved successfully";
-		}
+		} 
 		log.error("Data not saved");
 		return "data not saved,error";
 	}
